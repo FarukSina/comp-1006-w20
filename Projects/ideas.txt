@@ -1,0 +1,6 @@
+1) Hotel Reservation System
+2) Product Catalog
+3) Car Registration System
+4) Student Grade Recording System
+5) Forum
+6) Video Game Rentals

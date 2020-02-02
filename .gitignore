@@ -1,0 +1,15 @@
+*.zip
+*.rar
+*.7z
+*.xlsx
+*.mkv
+*.mp4
+*.docx
+*.pdf
+Lesson-Videos
+ASSETS
+Tests
+lab-submissions
+*/Quiz
+*/Lectures
+*/Lab
