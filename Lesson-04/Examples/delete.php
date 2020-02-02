@@ -1,15 +1,7 @@
 <?php
 
   // Our database connection
-  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-  $host = $url["host"] ?? 'localhost';
-  $user = $url["user"] ?? 'root';
-  $pass = $url["pass"] ?? null;
-  $db = substr($url["path"], 1) ?? 'lesson_03';
-
-  // Our database connection
-  $conn = mysqli_connect($host, $user, $pass, $db);
+  $conn = mysqli_connect('localhost', 'root', null, 'lesson_03');
 
   var_dump($_GET);
 
