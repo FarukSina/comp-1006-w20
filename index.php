@@ -25,6 +25,9 @@
       <li>
         <a href="./Lesson-05/Examples">Lesson 05</a>
       </li>
+      <li>
+        <a href="./Lesson-06/Examples">Lesson 06</a>
+      </li>
     </ul>
   </body>
 </html>

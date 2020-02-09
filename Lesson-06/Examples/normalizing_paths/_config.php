@@ -7,7 +7,7 @@
   // setting our absolute link path
   $document_root = realpath($_SERVER['DOCUMENT_ROOT']);
   
-  $application_root = realpath(dirname(__FILE__));
+  $application_root = dirname(__FILE__);
   
   $link_path = str_replace($document_root, '', $application_root);
   
