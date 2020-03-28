@@ -1,7 +1,9 @@
 <?php
 
+  require_once('../_config.php');
+
   // Connect to the database
-  require('./_connect.php');
+  require('_utilities/_connect.php');
   $conn = connect();
   
   // Create our SQL with an email placeholder
@@ -24,19 +26,20 @@
     $_SESSION['form_values'] = $_POST;
 
     // Redirect back to the form
-    header('Location: ./login.php');
+    header('Location: ' . BASE_PATH . '/sessions/login.php');
     exit;
   }
 
   // Check if we have a user and their password is correct
   $user = $stmt->fetch();
-  if (!$user || password_verify($_POST['password'], $user['password'])) {
+
+  if (!$user || !password_verify($_POST['password'], $user['password'])) {
     // Add the error message to the errors session array
     $_SESSION['errors'][] = "You could not be authenticated. Check your email address or please register for an account.";
     $_SESSION['form_values'] = $_POST;
 
     // Redirect back to the form
-    header('Location: ./login.php');
+    header('Location: ' . BASE_PATH . '/sessions/login.php');
     exit;
   }
 
@@ -46,5 +49,5 @@
 
   // Redirect back to the form
   $_SESSION['successes'][] = "You have successfully logged in.";
-  header('Location: ./profile.php');
+  header('Location: ' . BASE_PATH . '/users/profile.php');
   exit;

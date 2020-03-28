@@ -1,17 +1,3 @@
-<?php
-  session_start();
-
-  // If they're not logged in, redirect them
-  if (!isset($_SESSION['user'])) {
-    $_SESSION['errors'][] = "You must log in";
-    header('Location: ./login.php');
-    exit;
-  }
-
-  // Assign the user
-  $user = $_SESSION['user'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,11 +16,11 @@
       <header class="jumbotron my-5">
         <div class="row">
           <div class="col-5">
-            <img src="http://api.adorable.io/avatars/300/<?= $user['email'] ?>" alt="Your avatar self." class="img-fluid img-thumbnail">
+            <img src="http://api.adorable.io/avatars/300/" alt="Your avatar self." class="img-fluid img-thumbnail">
           </div>
 
           <div class="col-7">
-            <h1 class="display-4">Hello <strong><?= "{$user['first_name']} {$user['last_name']}" ?></strong></h1>
+            <h1 class="display-4">Hello <strong></strong></h1>
             <p class="lead">Welcome CHAMPION!</p>
             <hr class="my-4">
             <p>

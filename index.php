@@ -34,6 +34,9 @@
       <li>
         <a href="./Lesson-08/Examples">Lesson 08</a>
       </li>
+      <li>
+        <a href="./Lesson-09/Examples">Lesson 09</a>
+      </li>
     </ul>
   </body>
 </html>

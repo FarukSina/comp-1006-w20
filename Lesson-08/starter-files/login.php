@@ -1,12 +1,3 @@
-<?php
-  // Before we render the form let's check for form values
-  session_start();
-  $form_values = $_SESSION['form_values'] ?? null;
-
-  // Clear the form values
-  unset($_SESSION['form_values']);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,8 +10,6 @@
   </head>
 
   <body>
-    <?php include_once('notification.php') ?>
-
     <div class="container">
       <header class="jumbotron my-5">
         <h1 class="display-4">Login</h1>
@@ -37,7 +26,7 @@
             <div class="col">
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input class="form-control" type="email" name="email" placeholder="herman.munster@mockingbird.com" required value="<?= $form_values['email'] ?? null ?>">
+                <input class="form-control" type="email" name="email" placeholder="herman.munster@mockingbird.com" required>
               </div>
             </div>
             
