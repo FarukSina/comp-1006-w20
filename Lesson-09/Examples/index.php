@@ -9,12 +9,12 @@
       <p>
         <strong>Bloggin' With Style</strong> is an outlet of ramblings for our elite members only!
       </p>
-      <a class="btn" href="<?= BASE_PATH ?>/users/register.php">Register</a>
-      <a class="btn" href="<?= BASE_PATH ?>/sessions/login.php">Login</a>
+      
+      <?php if (!authorized()): ?>
+        <a class="btn" href="<?= BASE_PATH ?>/users/register.php">Register</a>
+        <a class="btn" href="<?= BASE_PATH ?>/sessions/login.php">Login</a>
+      <?php endif ?>
     </header>
-
-    <section class="mb-5">
-    </section>
   </div>
 
 <?php include('_partials/_footer.php') ?>

@@ -61,7 +61,6 @@
         </div>
 
         <button class="btn" type="submit">Register</button>
-        <a class="btn" href="<?= BASE_PATH ?>/sessions/login.php">Login</a>
       </form>
     </section>
   </div>

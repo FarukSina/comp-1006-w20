@@ -33,8 +33,6 @@
         </div>
       </div>
     </header>
-
-    <a class="btn" href="logout.php">Logout</a>
   </div>
 
 <?php include('_partials/_footer.php') ?>

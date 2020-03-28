@@ -40,7 +40,6 @@
         </div>
 
         <button class="btn" type="submit">Login</button>
-        <a class="btn" href="<?= BASE_PATH ?>/users/register.php">Register</a>
       </form>
     </section>
   </div>
