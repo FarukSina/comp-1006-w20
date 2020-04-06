@@ -1,0 +1,9 @@
+{
+  "fullname": {
+    "first": "Jane",
+    "last": "Smith"
+  },
+  "age": 22,
+  "dob": "01-01-1998",
+  "married": false
+}
